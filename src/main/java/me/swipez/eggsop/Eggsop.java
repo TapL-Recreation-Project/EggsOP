@@ -1,5 +1,6 @@
 package me.swipez.eggsop;
 
+import me.swipez.eggsop.bstats.Metrics;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Eggsop extends JavaPlugin {
@@ -14,6 +15,8 @@ public final class Eggsop extends JavaPlugin {
         getCommand("eggsop").setTabCompleter(new CommandComplete());
         getConfig().options().copyDefaults();
         saveDefaultConfig();
+        new Metrics(this, 10447);
+
 
     }
 
