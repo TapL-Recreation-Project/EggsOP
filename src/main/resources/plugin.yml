@@ -1,0 +1,9 @@
+name: EggsOP
+version: ${project.version}
+main: me.swipez.eggsop.Eggsop
+api-version: 1.16
+authors: [ notnotnotswipez ]
+commands:
+  eggsop:
+    usage: /eggsop <start/stop/reload>
+    description: Starts or stops the OP Eggs challenge
